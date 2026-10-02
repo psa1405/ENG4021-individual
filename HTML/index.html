@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/curriculo.css">
+    <link rel="stylesheet" href="{% static 'css/curriculo-v1.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <title>Home Page</title>
 </head>
@@ -13,10 +13,10 @@
   <ul class="navegacao">
     <li><a href="http://www.puc-rio.br">PUC-Rio</a></li>
     <li><a href="#resumo">Resumo</a></li>
-    <li>Habilidades</li>
-    <li>Educação</li>
-    <li>Idiomas</li>
-    <li>Versão 2</li>
+    <li><a href="#habilidades">Habilidades</a></li>
+    <li><a href="#educacao">Educação</a></li>
+    <li><a href="#idiomas">Idiomas</a></li>
+    <li><a href="#versao2">Versão 2</a></li>
     <li><a href="meu-curriculo.html">Meu currículo</a></li>
   </ul>
 </nav>
@@ -24,7 +24,7 @@
 <main>
 <h1>Astronauta Spiff</h1>
 
-<img src='img/spiff.jpeg' alt='Foto do astronauta Spiff em ação'>
+<img src="{% static 'img/spiff.jpeg' %}" alt="Foto do astronauta Spiff">
 
 <p>
 Profissão: Astronauta Intergalático, Explorador de Mundos Desconhecidos
@@ -64,7 +64,7 @@ Resgatou de civilizações ameaçadas por buracos negros.
 Vice-campeão intergalático de cara-coroa.
 </p>
 
-<h2>Habilidades Técnicas Espaciais</h2>
+<h2 id="habilidades">Habilidades Técnicas Espaciais</h2>
 <p>Acrobacias em gravidade zero
 Comunicação interespécies
 Construção de bases lunares improvisadas
@@ -87,24 +87,22 @@ Adaptabilidade a situações inesperadas (que são quase todas)
 Autoconfiança (às vezes excessiva)
 Habilidade de argumentação persuasiva (especialmente com figuras de autoridade terrestres)
 </p>
-<h2>Educação (Auto-Didata e Experiencial)</h2>
-<p>
+<h2 id="educacao">Educação (Auto-Didata e Experiencial)</h2>
 <ol>
-<li>Doutorado em Exploração Interdimensional e Defesa Contra Alienígenas Malignos (Honras Imaginárias)</li>
-<li>Mestrado em Viagem Hiperespacial (com honras)</li>
-<li>Universidade Estelar de Calvin — Ciências da Galáxia</li>
-<li>Academia Estelar de Calvin — Diploma em Engenharia Espacial e Aventuras</li>
-<li>Currículo incluiu estudos avançados em:</li>
+<li><p>Doutorado em Exploração Interdimensional e Defesa Contra Alienígenas Malignos (Honras Imaginárias)</p></li>
+<li><p>Mestrado em Viagem Hiperespacial (com honras)</p></li>
+<li><p>Universidade Estelar de Calvin — Ciências da Galáxia</p></li>
+<li><p>Academia Estelar de Calvin — Diploma em Engenharia Espacial e Aventuras</p></li>
+<li><p>Currículo incluiu estudos avançados em:</p></li>
 </ol>
 <ul>
-<li>Teoria da Propulsão a Jato de Papelão</li>
-<li>Linguística Alienígena Intuitiva</li>
-<li>Táticas de Fuga e Evasão Escolar Espacial</li>
-<li>Astronomia de Quintal Avançada</li>
-<li>Sobrevivência com Lancheiras e Refresco de Laranja Lima</li>
+<li><p>Teoria da Propulsão a Jato de Papelão</p></li>
+<li><p>Linguística Alienígena Intuitiva</p></li>
+<li><p>Táticas de Fuga e Evasão Escolar Espacial</p></li>
+<li><p>Astronomia de Quintal Avançada</p></li>
+<li><p>Sobrevivência com Lancheiras e Refresco de Laranja Lima</p></li>
 </ul>
-</p>
-<h2>Idiomas</h2>
+<h2 id="idiomas">Idiomas</h2>
 <p>Terráqueo
 Glurpiano
 Dialetos de Saturno
