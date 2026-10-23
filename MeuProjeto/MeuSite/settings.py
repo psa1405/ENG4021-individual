@@ -25,8 +25,7 @@ SECRET_KEY = "django-insecure-2-1s4qs9(16^d7ta#dl&dvk8aac!c6y%0-4i&$q)oddj)jb$fk
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -126,3 +125,17 @@ MAILERS = {
         "BACKEND": "django.core.mail.backends.console.EmailBackend",
     },
 }
+
+# Encaminhamento para o login/logout
+
+LOGOUT_REDIRECT_URL = '/accounts/login/'  # Para onde vai após logout
+LOGIN_URL = '/accounts/login/'       # URL de login (padrão)
+# ATENÇÃO!!! Troque o valor da variável abaixo para que ela seja uma das rotas
+# válidas no seu arquivo MeuSite/curriculo/urls.py
+LOGIN_REDIRECT_URL = '/'   # Para onde vai após login
+
+CORS_ALLOW_ALL_ORIGINS = True
+CSRF_TRUSTED_ORIGINS = [
+    'https://localhost:8000', 
+    'http://localhost:8000',
+]
